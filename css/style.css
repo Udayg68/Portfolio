@@ -1,0 +1,102 @@
+*{
+    box-sizing:border-box;
+}
+body {
+    margin: 0;
+}
+/* About me  */
+#info {
+    background-color: #68B984;
+    padding: 10px;
+    text-align: center;
+    line-height: 0.5;
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+}
+p {
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 3%;
+    font-size: 1.5rem;
+}
+/* imag  */
+.img1 {
+    margin-right: 20%;
+}
+.img2 {
+    margin-left: 20%;
+
+}
+
+/* profile */
+.profile {
+    text-align: center;
+    margin-right: 2%;
+}
+.profilepic {
+    width: 15%;
+    padding: 5px ;
+}
+
+/* Skills */
+.skills {
+    background-color: #ADE792;
+    text-align: center;
+    padding: 2%;
+}
+.skills p {
+    line-height: 1.5;
+}
+.skillimg {
+    width: 5%;
+    color: #d2a213;
+}
+/* Projects   */
+.projects {
+    text-align: center;
+    padding:34px 20px;
+}
+a {
+    font-family: 'Montserrat-BOLD', sans-serif;
+    font-size: 25px;
+    line-height: 2.4;
+}
+#list{
+    list-style: none;
+}
+#footer {
+    background-color: #a6edb3;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1ss0px;
+    text-align: center;
+    padding: 5px;
+}
+/* email  */
+.email {
+    width: 2%;
+    padding-right: 15px;
+}
+h3 {
+    font-size: 20px;
+    margin-left: 4%;
+    word-spacing: 6.5px;
+}
+@media only screen and (max-width: 600px) {
+    .profilepic {
+        width: 35%;
+        padding: 5px ;
+    }
+    .skillimg {
+        width: 25%;
+    }
+  }
+  @media only screen and (max-width: 300px) {
+    .profilepic {
+        width: 45%;
+        padding: 5px ;
+    }
+    .skillimg {
+        width: 25%;
+    }
+  }

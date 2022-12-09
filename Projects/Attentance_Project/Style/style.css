@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+}
+/* title section */
+#title {
+    background-color: #6C4AB6;
+}
+#brand{
+    margin: 12px;
+    font-size: 4.25rem;
+    font-family: 'Satisfy', cursive; 
+}
+#navbarSupportedContent {
+    margin-left:12%;
+}
+.nav-item {
+    font-family: 'UnifrakturMaguntia', cursive;
+    color: rgb(42, 90, 78);
+    padding: 30px;
+    font-size: 15px;
+    margin-right:45px;
+}
+.nav-item:hover{
+    color:rgb(13, 40, 31);
+}
+.title1 {
+    margin: 14% 16% 18% 15%; 
+    padding: 20px;
+    font-size:50px;
+    font-family: 'Montserrat-BOLD', sans-serif;
+    
+}
+.stu {
+    width: 40%;
+    border-radius: 5%;
+    margin:6% 0% 2% 10% 
+}
