@@ -1,0 +1,145 @@
+/* navbar  */
+*{
+    font-family: 'Montserrat',sans-serif;
+}
+#title {
+    background-color: #ff4c68;
+    color:#fff;
+   
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+.container-fluid {
+    padding: 3% 18%;
+}
+.navbar {
+    padding-bottom: 4.5rem;
+}
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.nav-item {
+    padding:0 48px;
+}
+.nav-link {
+    font-size: 1.5rem;
+    font-family: 'Montserrat-light', sans-serif;
+    
+}
+.downloadbuttons {
+    margin:5% 3% 5% 0%;
+    
+}
+
+/* title-img */
+.title-img {
+    width:11%;
+    transform: rotate(23deg);
+    position: absolute;
+    top:34%;
+
+}
+/* Features section  */
+h3 {
+    font-family: 'Montserrat', sans-serif;
+
+}
+p {
+    color: #8f8f8f;
+}
+
+#features {
+    padding: 3% 13%;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+/* second div */
+.feature-box{
+    text-align: center;
+    padding: 5%;
+}
+#icons {
+    padding:3% 0;
+    color: #ff4c68;
+}
+#icons:hover {
+    color:#eb6176;
+}
+
+/* testimonal section */
+#testimonials {
+    
+    text-align: center;
+    background-color: #ff4c68;
+    color: #fff;
+}
+h2 {
+    font-family: 'Montserrat-BOLD', sans-serif;
+    font-size: 3rem;
+    line-height: 1.5;
+
+}
+.testimonial-img{
+    border-radius: 100%;
+    width: 10%;
+    margin: 20px;
+}
+#press {
+    background-color: #ff4c68;
+    text-align: center;
+    padding-bottom: 3%;
+}
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+#testimg{
+    width: 15%;
+    border-radius: 50%;
+}
+.carousel-item{
+    padding: 3% 15%;
+}
+/* pricing */
+#pricing {
+    padding:3%;
+    text-align: center;
+}
+@media (max-width:1028){
+    .title-img {
+        position: static;
+        transform: rotate(0);
+    }
+    .title {
+        text-align: center;
+    }
+      
+}
+/* call to action */
+#cta {
+    text-align: center;
+    background-color: #ff4c68;
+}
+.head {
+    margin: 0% 30% 2% 32%;
+   padding: 5% 4% 0%;
+    font-size: 40px;
+    color: #fff;
+}
+.btn {
+    
+    margin: 1%
+}
+#footer{
+    text-align: center;;
+    padding: 2%;
+}
+.footic {
+    padding:2px;
+}
