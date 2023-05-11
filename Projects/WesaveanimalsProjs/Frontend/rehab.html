@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REHABILATION CENTER</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="Javascript/app.js"></script>
+    <style>
+      * {
+        font-family: "Montserrat", sans-serif;
+        font-family: "Poppins", sans-serif;
+      }
+
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@200&display=swap");
+      .menubar {
+        z-index: 9989;
+        background-color: #ff8400;
+        height: 100px;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 8%;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        margin-top: 2%;
+      }
+      .menubar ul {
+        list-style: none;
+        display: flex;
+      }
+      .menubar ul li {
+        padding: 10px 30px;
+        position: relative;
+      }
+      .menubar ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-size: 17px;
+        font-weight: 400;
+        transition: all 0.7s;
+      }
+      .menubar ul li a:hover {
+        color: #81b214;
+        font-weight: bold;
+        text-shadow: black;
+      }
+      .dropdown {
+        display: none;
+      }
+      .menubar ul li:hover .dropdown {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background-color: #ff8400;
+        border-radius: 10px;
+      }
+      .dropdown ul {
+        display: block;
+        margin: 10px;
+      }
+      .dropdown ul li {
+        width: 190px;
+        padding: 10px;
+      }
+      .fas {
+        float: right;
+        margin-left: 10px;
+        padding-top: 3px;
+      }
+      .mar {
+        z-index: 9999;
+        background-color: #81b214;
+        height: 30px;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 8%;
+        font-family: Montserrat, sans-serif;
+        font-weight: 500;
+        margin-bottom: 2%;
+      }
+      .container-f {
+        width: 100%;
+        background-color: #000;
+        padding: 50px;
+      }
+      .fo {
+        display: inline;
+        color: white;
+        margin-left: 35%;
+        font-size: 25px;
+        -webkit-text-stroke: 1px;
+      }
+      .fo-img {
+        width: 3%;
+        border-radius: 50%;
+      }
+      .fo-img:hover {
+        filter: brightness(0.5);
+      }
+
+      .fo-img1 {
+        width: 3%;
+        border-radius: 30%;
+        background-color: white;
+      }
+      .fo-img1:hover {
+        filter: brightness(0.5);
+      }
+      .fo-des {
+        color: white;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+        font-style: italic;
+      }
+      .cont-s {
+        display: flex;
+        min-height: 30vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 4rem;
+        padding-top: 9%;
+        background-color: #81b214;
+      }
+      .container-items {
+        width: 100%;
+        display: flex;
+      }
+      .container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+      }
+      .rescue {
+        width: 80%;
+        height: 90vh;
+        max-width: 1600px;
+        max-height: 800px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: 11%;
+      }
+      .rescue-items {
+        width: 30%;
+        height: calc(50% - 20px);
+        min-width: 300px;
+        min-height: 200px;
+        margin: 10px;
+        overflow: hidden;
+      }
+      .image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 1s;
+      }
+      .poper {
+        position: fixed;
+        top: 3%;
+        left: 51%;
+        transform: translate(-50%, 50%);
+        width: 80%;
+        max-width: 1680px;
+        height: 60vh;
+        max-height: 800px;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.75);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
+        overflow: hidden;
+        transition: 1s;
+        opacity: 0;
+      }
+      .popup.active {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+      }
+      .popup.active .close-btn,
+      .popup.active .image-name,
+      .popup.active .index,
+      .popup.active .large-image,
+      .popup.active .arrow-btn {
+        opacity: 1;
+        transition: opacity 0.5s;
+        transition-delay: 1s;
+      }
+
+      .top-bara {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background: #000;
+        color: #fff;
+        text-align: center;
+        line-height: 50px;
+        font-weight: 300;
+      }
+      .image-name {
+        opacity: 0;
+      }
+      .close-btn {
+        opacity: 0;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: red;
+        cursor: pointer;
+      }
+      .arrow-btn {
+        position: absolute;
+        opacity: 0;
+        top: 15rem;
+        transform: translateY(-50%);
+        padding: 10px;
+        border-radius: 50%;
+        border: none;
+        background: none;
+        cursor: pointer;
+      }
+      .left-arrow {
+        left: 10px;
+        filter: invert(100%);
+      }
+      .right-arrow {
+        right: 10px;
+        transform: translateY(-50) rotate(180deg);
+        filter: invert(100%);
+      }
+      .arrow-btn:hover {
+        background: rgba(0, 0, 0, 0.5);
+      }
+      .index {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        font-size: 80px;
+        font-weight: 100;
+        color: rgba(255, 255, 255, 0.5);
+      }
+      .large-image {
+        margin-top: 5%;
+        width: 80%;
+        height: 80%;
+        object-fit: contain;
+      }
+      .rescue:hover {
+        filter: brightness(0.7);
+      }
+      .cont-s1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 1%;
+      }
+      .d1 {
+        padding: 2%;
+        margin-right: 12%;
+      }
+      .d2 {
+        margin-right: 12%;
+        padding: 2%;
+      }
+
+      .d3 {
+        margin-right: 12%;
+        padding: 2%;
+      }
+    </style>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="mar">
+      <marquee behavior="" direction="right"
+        >Shelter Timings: 10:00am to 05:00pm</marquee
+      >
+    </div>
+    <div class="menubar">
+      <img src="images/logo.png" alt="logo" width="90px" />
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li>
+          <a href="">Services <i class="fas fa-caret-down"></i></a>
+          <div class="dropdown">
+            <ul>
+              <li><a href="overview.html">Overview</a></li>
+              <li>
+                <a href="rescue.html">Rescue Injured & Old Stray Animals</a>
+              </li>
+              <li>
+                <a href="medical.html">Medical Treatments</a>
+              </li>
+              <li>
+                <a href="rehab.html">REHABILITATION CENTRE</a>
+              </li>
+              <li>
+                <a href="adoption.html">ADOPTION & AWARENESS</a>
+              </li>
+              <li><a href="volunteers.html">VOLUNTEERS</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <a href="">Gallery<i class="fas fa-caret-down"></i></a>
+          <div class="dropdown">
+            <ul>
+              <li><a href="overview2.html">OVERVIEW</a></li>
+              <li>
+                <a href="shelter.html">SHELTER PICTURES</a>
+              </li>
+              <li><a href="rescue1.html">RESCUE DIARIES</a></li>
+              <li>
+                <a href="aware.html">AWARENESS PROGRAM</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="cont-s">
+      <h1>REHABILATION CENTER</h1>
+    </div>
+    <div class="cont-s1">
+      <div class="d1">
+        <h1 style="color: #ff8400">162</h1>
+        <p style="color: black; font-family: poppins, sans-serif">Dogs</p>
+      </div>
+      <div class="d2">
+        <h1 style="color: #ff8400; font-family: poppins, sans-serif">19</h1>
+        <p style="color: black; font-family: poppins, sans-serif">Cats</p>
+      </div>
+      <div class="d3">
+        <h1 style="color: #ff8400">2</h1>
+        <p style="color: black; font-family: poppins, sans-serif">Cows</p>
+      </div>
+    </div>
+    <div class="cont-s1">
+      <div class="d1">
+        <h1 style="color: #ff8400">2</h1>
+        <p style="color: black; font-family: poppins, sans-serif">Calf</p>
+      </div>
+      <div class="d2">
+        <h1 style="color: #ff8400; font-family: poppins, sans-serif">1</h1>
+        <p style="color: black; font-family: poppins, sans-serif">Sheep</p>
+      </div>
+      <div class="d3">
+        <h1 style="color: #ff8400">1</h1>
+        <p style="color: black; font-family: poppins, sans-serif">Goat</p>
+      </div>
+    </div>
+    <div class="poper">
+      <div class="top-bara">
+        <span class="close-btn"></span>
+        <button class="arrow-btn left-arrow">
+          <img src="images/arrow-left.png" alt="" width="80px" />
+        </button>
+        <button class="arrow-btn right-arrow">
+          <img src="images/arrow-right.png" alt="" width="80px" />
+        </button>
+        <img src="images/rescue/Rescue1.png" alt="" />
+      </div>
+    </div>
+    <div class="rescue">
+      <div class="rescue-items">
+        <img src="images/rescue/Rescue1.png" alt="" class="large-image" />
+        <h1 class="index">Rescue</h1>
+      </div>
+      <div class="rescue-items">
+        <img src="images/rescue/Rescue2.png" alt="" class="image" />
+      </div>
+      <div class="rescue-items">
+        <img src="images/rescue/Rescue3.png" alt="" class="image" />
+      </div>
+      <div class="rescue-items">
+        <img src="images/rescue/Rescue4.png" alt="" class="image" />
+      </div>
+      <div class="rescue-items">
+        <img src="images/rescue/Rescue5.png" alt="" class="image" />
+      </div>
+      <div class="rescue-items">
+        <img src="images/rescue/Rescue6.png" alt="" class="image" />
+      </div>
+    </div>
+    <footer>
+      <div class="container-f">
+        <h2 class="fo">Follow Us</h2>
+        <a
+          href="https://www.facebook.com/people/WSA-We-Save-Animals/100064329866728/?hc_ref=ARQ7vjLG3HV5adfBbiHtF6yOfhxAc-vHyBR6IC_l3cnIDUFiVYrMWs55MWhjJnGKdKw"
+          target="_blank"
+          ><img src="images/fb.png" alt="" class="fo-img"
+        /></a>
+        <a
+          href="https://instagram.com/we__save__animals?igshid=NTc4MTIwNjQ2YQ=="
+          target="_blank"
+          ><img src="images/insta.png" alt="" class="fo-img1"
+        /></a>
+        <a
+          href="https://www.youtube.com/channel/UCoe7IQVULtg7o59XiWgIBSg"
+          target="_blank"
+          ><img src="images/youtube.png" alt="" class="fo-img"
+        /></a>
+        <a
+          href="https://www.google.com/maps/place/We+Save+Animals/@12.791543,77.4917831,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae41bc0304b55b:0x767846db379dcc5a!8m2!3d12.791543!4d77.4917831!16s%2Fg%2F11fjbkj2y0"
+          target="_blank"
+          ><img src="images/gmap.png" alt="" class="fo-img"
+        /></a>
+        <p class="fo-des">
+          © 2020. We Save Animals (WSA) Welfare Trust. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

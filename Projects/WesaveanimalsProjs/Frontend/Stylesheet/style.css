@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.menubar{
+    z-index: 9989;
+    background-color:#FF8400;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-top: 2%;
+}
+.menubar ul {
+    list-style: none;
+    display: flex;
+}
+.menubar ul li {
+    padding: 10px 30px;
+    position: relative;
+}
+.menubar ul li a {
+    text-decoration: none;
+    text-transform:uppercase;
+    color: white;
+    font-size: 17px;
+    font-weight: 400;
+    transition: all 0.7s;
+}
+.menubar ul li a:hover {
+    color: #81B214;
+    font-weight: bold;
+    text-shadow: black;
+
+}
+.dropdown{
+    display: none;
+}
+.menubar ul li:hover .dropdown {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color:#FF8400;
+    border-radius: 10px;
+}
+.dropdown ul{
+    display: block;
+    margin: 10px;
+}
+.dropdown ul li{
+    width: 190px;
+    padding: 10px;
+}
+.fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+#intro-cont {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    margin-bottom: 12%;
+}
+.intro {
+    width: 50%;
+    margin: 10% 0% 0% 3%;
+    padding: 2%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.intro p {
+    display: inline-block;
+}
+.h1 {
+    display: inline;
+    color: #FF8400;
+    line-height: 2;
+    letter-spacing: 1px;
+    text-shadow: black;
+    margin-left: 2%;
+    font-size: 1.5rem;
+    -webkit-text-stroke: 1px;
+}
+.h2 {
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: #81B214;
+    text-shadow: black;
+    font-size: 2rem;
+    margin-left: 2%;
+    -webkit-text-stroke: 1px;
+}
+.par1{
+    line-height: 1.5;
+    font-size: 1.6em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 0.4px;
+
+}
+.par2 {
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-size: 1.6em;
+    font-weight: 400;
+    -webkit-text-stroke: 0.3px;
+
+}
+.learn{
+    border: 2px solid black;
+    padding: 2%;
+    border-radius: 50px;
+    background-color: #e27807;
+    color: white;
+    font-size: 15px;
+    transition: all .6s;
+    -webkit-text-stroke: 0.5px;
+    margin: 20px 0px 4px 110px;
+
+}
+.href a{
+    text-decoration: none;
+    color: white;
+    
+}
+.learn:hover{
+    color: black;
+    background-color: #81B214;
+    
+}
+.introimg{
+    margin: 2%;
+
+}
+.introimg img{
+    width: 800px;
+    margin-top: 16%;
+    border-radius: 15px;
+}
+#whtwedo {
+    display: flex;
+    width: 100%;
+}
+.wimg {
+    margin: 2%;
+    width: 50%;
+    
+}
+.wimg img{
+    width: 100%;
+    border-radius: 25px;
+}
+.wcont {
+    width: 50%;
+    margin: 4% 4% 0 2%;
+
+}
+.wcont h1 {
+    color: #FF8400;
+    margin-left: 29%;
+    -webkit-text-stroke: 1px;
+    font-size:33px;
+    line-height: 2;
+}
+.wpara {
+    color: #53593a;
+    line-height: 2;
+    display: block;
+    margin-top: 2%;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+.w-learn {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 1%;
+    font-size: 1rem;
+    font-weight: 500;
+    -webkit-text-stroke: 1px;
+    letter-spacing: 2px;
+    color: white;
+    transition: all 0.7s;
+    background-color:#FF8400 ;
+}
+.w-learn:hover {
+    background-color:#81B214;
+    color: black;
+}
+#Abtfounder{
+    display: flex;
+    background-color: #e27807;
+    width: 100%;
+    height: 500px;
+    font-family: 'Montserrat', sans-serif;
+}
+.f-heading{
+    color: #81B214;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;;
+}
+.f-content{
+    width: 50%;
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    display: inline;
+}
+.f-descrip {
+    margin-top: 2%;    
+    display: block;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    color: #c8c5c5;
+}
+.f-img{
+    width: 82%;
+    margin:25px 0px 0px 60px;
+    rotate: 25deg;
+}
+.f-btn {
+    padding: 10px;
+    margin-left: 25%;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: white;
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+    -webkit-text-stroke: 1px;
+    transition: all 0.7s;
+    letter-spacing: 2px;
+}
+.f-btn:hover {
+    background-color:#81B214;
+    color: #ffff;
+}
+.f-btn0{
+    margin: 2% 1% 4% 0%;
+    display: block;
+
+}
+.mar {
+    z-index: 9999;
+    background-color: #81B214;
+    height: 30px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 8%;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    margin-bottom: 2%;
+}
+.d-block {
+    width: 100%;
+    height: 120%;
+}
+.r-img {
+    width: 120%;
+    height: 700px;
+    filter: brightness(0.5);
+    z-index: 0;
+    position: absolute;
+}
+.rh1{
+    position:relative;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    padding-top: 20%;
+    width: 100%;
+}
+.rh3{
+    position:relative;
+    text-align: center;
+    color: white;
+    font-size: 35;
+    padding-top: 2%;
+}
+.add {
+    display: flex;
+    width: 100%;
+    margin-top: 20%;
+    margin-left: 12px;
+    height: 300px;
+    padding: 50px;
+    font-size: 15px;
+    font-family: poppins,sans-serif;
+}
+.a-cont {
+    width: 50%;
+}
+.container {
+    width: 40%;
+    right: 23%;
+    left: 50%;
+}
+.cont {
+    font-size: 20px;
+    display: block;
+}
+.a-h {
+    color: #FF8400;
+    -webkit-text-stroke: 1px;
+}
+.a-c {
+ font-size: 20px;   
+}
+.container-f {
+    width: 100%;
+    background-color: #000;
+    padding: 50px;
+}
+.fo {
+ display: inline;
+ color:white;
+ margin-left: 35%;
+ font-size: 25px;
+ -webkit-text-stroke: 1px;
+}
+.fo-img {
+    width: 3%;
+    border-radius: 50%;
+
+}
+.fo-img :hover {
+    filter: brightness(0.5);
+}
+
+.fo-img1 :hover {
+    filter: brightness(0.5);
+}
+.fo-img1 {
+    width: 3%;
+    border-radius: 30%;
+    background-color: white;
+}
+.fo-des {
+    color: white;
+    text-align: center; 
+    margin-top: 20px;
+    font-size: 14px;
+    font-style: italic;
+}
+.youtube {
+    margin-left: 6%;
+}
